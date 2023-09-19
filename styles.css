@@ -1,0 +1,279 @@
+/*https://jigsaw.w3.org/css-validator/*/
+/* Testing: Congratulations! No Error Found.*/
+
+/*just to try part: // Variables
+$mainColor: #1E90FF; // dodgerblue
+$indigo: #4B0082;*/
+
+/*Typography*/
+html {font: 16px "Ubuntu", sans-serif;}
+/*Layout*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+*,
+*:before,
+*:after {box-sizing: border-box;}
+.top_box {height: 100%;} /*all top part box*/
+section {padding: 1em 0;}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  transition: all .25s;
+}
+.row,
+nav {
+  margin: auto;
+  width: 100%;
+  max-width: 55em; /*---*/
+}
+.row_low,
+nav {
+  margin: auto;
+  width: 100%;
+  max-width: 100em; /*---*/
+}
+.col-2 {
+  display: inline-block;
+  width: 49%;
+  min-width: 300px;
+  vertical-align: top;
+}
+/*@media mediaType and (condition) {
+  /* Styles to be applied when the condition is met + mediaType: This specifies the type of media being targeted. Common values include screen, print, speech, etc */
+}
+/*target screens with a maximum width of 500 pixels*/
+@media screen and (max-width: 500px) {
+  .col-2 {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
+.col-4 {
+  display: inline-block;
+  width: 24.7%;
+  min-width: 230px;
+  vertical-align: top;
+  font-size: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .col-4 {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
+/*Navigation*/
+header {
+  float: left;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 1px 3px #333;
+  z-index: 1;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+}
+input {display: none;}
+input:checked + .nav {display: flex;}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #C8FFC3; /*only Banner*/
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav li {text-align: center;}
+}
+
+.nav a,
+label {
+  text-align: center;
+  font-weight: bold;
+  /*font-size: 15px;*/
+  color: #1234CD; /*all top part text*/
+}
+.nav a {
+  display: block;
+  padding: 1em .75em;
+}
+label.fa {
+  display: none;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  label.fa {display: block;}
+}
+/*Intro*/
+.sec-intro {
+  padding-top: 0;
+  background: #C8FFC3; /*all top part with exemption*/
+}
+.sec-intro .row {max-width: 100%;}
+.sec-intro .row > img {
+  float: left;
+  width: 50%;
+  height: 400px;
+  vertical-align: top;
+}
+@media screen and (max-width: 500px) {
+  .sec-intro .row > img {width: 100%}
+}
+.sec-intro .col-4 {
+  margin-right: -3.5px;
+  width: 25%;
+}
+.sec-intro .col-4 img {height: 200px;}
+@media screen and (max-width: 930px) {
+  .sec-intro .col-4 {width: 50%;}
+  .sec-intro .col-4:nth-child(3),
+  .sec-intro .col-4:last-child {margin-top: -3px;}
+}
+@media screen and (max-width: 500px) {
+  .sec-intro .col-4 {
+    display: inline-block;
+    width: 100%;
+  }
+  .sec-intro .col-4:nth-child(2),
+  .sec-intro .col-4:nth-child(3),
+  .sec-intro .col-4:last-child {margin-top: -3px;}
+}
+.sec-intro img {width: 100%;}
+/*main part - before historic sites*/
+.sec-posts {
+  margin-bottom: 0em; /*before historic sites*/
+  background: #DCFFF9;
+}
+/* .sec-posts .row:first-child {border-top: .1em dashed #aaa;}  - from review: looks better without */
+@media screen and (max-width: 622px) {
+  .sec-posts .col-2 {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+.sec-posts h2 {padding: 0 .25em;} /*text-align: center; - maybe, but looks empty from sides*/
+@media screen and (max-width: 622px) {
+  h2 {text-align: center;}
+}
+.post {padding: 0 .5em;}
+.post img {
+  float: left;
+  margin-right: .5em;
+  width: 100%;
+  height: 265px;
+}
+.post h1 {
+  display: inline;
+  font-size: 100%;
+  cursor: pointer;
+}
+.post p {
+  padding-right: .25em;
+  font-size: 90%;
+  text-align: justify;
+}
+.post span {float: right;}
+.post i {
+  cursor: pointer;
+}
+.post i:first-child {margin-right: .5em;}
+button {
+  margin-left: .5em;
+  padding: .5em 0;
+  width: 430px;
+  text-transform: uppercase;
+  background: #fff;
+  border: .0em solid;
+  outline: 0;
+  transition: color .25s;
+}
+@media screen and (max-width: 500px) {
+  button {
+    display: block;
+    margin: auto;
+  }
+}
+/*historic sites*/
+.sec-hyperlinks {
+  background: #C8FFC3;
+  color: #fff;
+}
+.sec-hyperlinks .row {margin-bottom: 2em;}
+.sec-hyperlinks h1 {
+  text-align: center;
+  color: #245DE0;
+}
+.sec-hyperlinks .col-4 {padding: 0 .5em;}
+@media screen and (max-width: 2000px) {
+  .sec-hyperlinks .col-4 {width: 50%;}
+}
+@media screen and (max-width: 500px) {
+  .sec-hyperlinks .col-4 {margin-bottom: 1.5em;}
+}
+.sec-hyperlinks img {
+  width: 100%;
+  height: 190px;
+}
+.sec-hyperlinks h2 {
+  margin: .1em 0;
+  font-size: 105%;
+  text-align: center;
+  color: #245DE0;
+  transition: color .25s;
+}
+.sec-hyperlinks a {transition: color .25s;}
+.sec-hyperlinks p {
+  margin-top: .5em;
+  font-size: 80%;
+  text-align: center;
+}
+/* Footer */
+.footer-all-footerANDh2 {
+  padding: 1em 0;
+  background: #DCFFF9;
+  text-align: center;
+  color: #09971C; /*all footer heads part text*/
+}
+footer .row:first-child a {
+  color: #09971C; /*all footer main part text*/
+}
+footer .row:last-child {padding: .5em;}
+@media screen and (max-width: 970px) {
+  footer .col-4 {
+    width: 49%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  ul {text-align: center;}
+}
+.Copyright {font-size: .5em; font-style: italic; text-align: center; display: inline; color: #008106; font-weight: bold;}
+.soc-media {
+  float: right;
+}
+/* do not touch, fixed manually in HTML */
+.soc-media li {float: right;}
+.soc-media li:not(:last-child) {margin-right: .5em;}
+.soc-media a {
+  display: block;
+  font-size: 130%;
+}
