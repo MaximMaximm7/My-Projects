@@ -1,10 +1,6 @@
 /*https://jigsaw.w3.org/css-validator/*/
 /* Testing: Congratulations! No Error Found.*/
 
-/*just to try part: // Variables
-$mainColor: #1E90FF; // dodgerblue
-$indigo: #4B0082;*/
-
 /*Typography*/
 html {font: 16px "Ubuntu", sans-serif;}
 /*Layout*/
@@ -270,7 +266,7 @@ footer .row:last-child {padding: .5em;}
 .soc-media {
   float: right;
 }
-/* do not touch, fixed manually in HTML */
+/* do not touch, fixed in HTML */
 .soc-media li {float: right;}
 .soc-media li:not(:last-child) {margin-right: .5em;}
 .soc-media a {
