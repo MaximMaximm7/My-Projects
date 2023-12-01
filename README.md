@@ -13,3 +13,5 @@ css: /* Testing: Congratulations! No Error Found.*/
 
 Specifications: Specifications: 5 different .html pages / 26 distinct HTML tags / 2 library: many integrated features / 
 1 stylesheet:styles.css for all html pages (many different CSS selectors and CSS properties) / JavaScript: Integrated / Ensure that your site looks nice: meta Integrated -->
+
+https://www.linkedin.com/in/maxim-movchan
